@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_HOST:localhost:3306}/${DB_NAME:photo_app}?useSSL=false
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+server:
+  port: 8181
+
+#  url: jdbc:mysql://${DB_HOST:localhost:3306}/${DB_NAME:photo_app}
+#    username: ${DB_USERNAME:root}
+#    password: ${DB_PASSWORD:root}
